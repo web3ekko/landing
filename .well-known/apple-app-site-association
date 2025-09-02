@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TEAMID.zone.ekko.app",
+        "paths": [
+          "/app/*",
+          "/alert/*",
+          "/wallet/*",
+          "/signup",
+          "/login"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["TEAMID.zone.ekko.app"]
+  }
+}

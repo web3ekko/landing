@@ -1,0 +1,35 @@
+{
+  "name": "Ekko - Blockchain Monitoring",
+  "short_name": "Ekko",
+  "description": "Natural language blockchain monitoring for everyone",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "finance", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Create Alert",
+      "url": "/app/alert/new",
+      "description": "Create a new blockchain alert"
+    },
+    {
+      "name": "Dashboard",
+      "url": "/app/dashboard",
+      "description": "View your monitoring dashboard"
+    }
+  ]
+}
