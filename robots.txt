@@ -1,0 +1,17 @@
+# Robots.txt for ekko.zone
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ekko.zone/sitemap-index.xml
+
+# Crawl-delay for considerate crawling
+Crawl-delay: 1
+
+# Disallow admin and private paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /.well-known/apple-app-site-association
+Disallow: /.well-known/assetlinks.json
