@@ -1,0 +1,11 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ekko schematic icon">
+  <title>Ekko schematic icon</title>
+  <g stroke="#161616" stroke-width="20" stroke-linecap="butt" stroke-linejoin="round">
+    <path d="M256 80A176 176 0 0 1 256 432" />
+    <path d="M256 128A128 128 0 0 1 256 384" />
+    <path d="M256 176A80 80 0 0 1 256 336" />
+    <path d="M256 224A32 32 0 0 1 256 288" />
+    <path d="M96 256H228" stroke-linecap="round" />
+    <circle cx="256" cy="256" r="16" fill="#161616" stroke="none" />
+  </g>
+</svg>
