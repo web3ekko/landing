@@ -26,22 +26,22 @@
       "version": "ffprobe version 8.1 Copyright (c) 2007-2026 the FFmpeg developers"
     },
     "commands": {
-      "heroDesktopVideoEncode": "[\"$FFMPEG\",\"-hide_banner\",\"-loglevel\",\"error\",\"-y\",\"-i\",\"$LOCKED_SOURCE\",\"-map\",\"0:v:0\",\"-an\",\"-vf\",\"scale=1280:720:flags=lanczos\",\"-r\",\"24\",\"-c:v\",\"libx264\",\"-preset\",\"slow\",\"-crf\",\"30\",\"-pix_fmt\",\"yuv420p\",\"-map_metadata\",\"-1\",\"-movflags\",\"+faststart\",\"$STAGING_DIR/hero-desktop.mp4\"]",
-      "heroMobileVideoEncode": "[\"$FFMPEG\",\"-hide_banner\",\"-loglevel\",\"error\",\"-y\",\"-i\",\"$LOCKED_SOURCE\",\"-map\",\"0:v:0\",\"-an\",\"-vf\",\"scale=960:540:flags=lanczos\",\"-r\",\"24\",\"-c:v\",\"libx264\",\"-preset\",\"slow\",\"-crf\",\"31\",\"-pix_fmt\",\"yuv420p\",\"-map_metadata\",\"-1\",\"-movflags\",\"+faststart\",\"$STAGING_DIR/hero-mobile.mp4\"]",
-      "heroDesktopPosterExtract": "[\"$FFMPEG\",\"-hide_banner\",\"-loglevel\",\"error\",\"-y\",\"-ss\",\"5\",\"-i\",\"$LOCKED_SOURCE\",\"-map\",\"0:v:0\",\"-an\",\"-frames:v\",\"1\",\"-vf\",\"scale=1280:720:flags=lanczos\",\"-q:v\",\"5\",\"-map_metadata\",\"-1\",\"$STAGING_DIR/hero-desktop-poster.jpg\"]",
-      "heroMobilePosterExtract": "[\"$FFMPEG\",\"-hide_banner\",\"-loglevel\",\"error\",\"-y\",\"-ss\",\"5\",\"-i\",\"$LOCKED_SOURCE\",\"-map\",\"0:v:0\",\"-an\",\"-frames:v\",\"1\",\"-vf\",\"scale=960:540:flags=lanczos\",\"-q:v\",\"5\",\"-map_metadata\",\"-1\",\"$STAGING_DIR/hero-mobile-poster.jpg\"]"
+      "heroDesktopVideoEncode": "[\"$FFMPEG\",\"-hide_banner\",\"-loglevel\",\"error\",\"-y\",\"-i\",\"$LOCKED_SOURCE\",\"-map\",\"0:v:0\",\"-an\",\"-vf\",\"scale=1280:720:flags=lanczos,hue=s=0,lutrgb=r='37+val*(243-37)/255':g='49+val*(230-49)/255':b='34+val*(220-34)/255'\",\"-r\",\"24\",\"-c:v\",\"libx264\",\"-preset\",\"slow\",\"-crf\",\"28\",\"-pix_fmt\",\"yuv420p\",\"-map_metadata\",\"-1\",\"-movflags\",\"+faststart\",\"$STAGING_DIR/hero-desktop.mp4\"]",
+      "heroMobileVideoEncode": "[\"$FFMPEG\",\"-hide_banner\",\"-loglevel\",\"error\",\"-y\",\"-i\",\"$LOCKED_SOURCE\",\"-map\",\"0:v:0\",\"-an\",\"-vf\",\"scale=960:540:flags=lanczos,hue=s=0,lutrgb=r='37+val*(243-37)/255':g='49+val*(230-49)/255':b='34+val*(220-34)/255'\",\"-r\",\"24\",\"-c:v\",\"libx264\",\"-preset\",\"slow\",\"-crf\",\"29\",\"-pix_fmt\",\"yuv420p\",\"-map_metadata\",\"-1\",\"-movflags\",\"+faststart\",\"$STAGING_DIR/hero-mobile.mp4\"]",
+      "heroDesktopPosterExtract": "[\"$FFMPEG\",\"-hide_banner\",\"-loglevel\",\"error\",\"-y\",\"-ss\",\"5\",\"-i\",\"$LOCKED_SOURCE\",\"-map\",\"0:v:0\",\"-an\",\"-frames:v\",\"1\",\"-vf\",\"scale=1280:720:flags=lanczos,hue=s=0,lutrgb=r='37+val*(243-37)/255':g='49+val*(230-49)/255':b='34+val*(220-34)/255'\",\"-q:v\",\"5\",\"-map_metadata\",\"-1\",\"$STAGING_DIR/hero-desktop-poster.jpg\"]",
+      "heroMobilePosterExtract": "[\"$FFMPEG\",\"-hide_banner\",\"-loglevel\",\"error\",\"-y\",\"-ss\",\"5\",\"-i\",\"$LOCKED_SOURCE\",\"-map\",\"0:v:0\",\"-an\",\"-frames:v\",\"1\",\"-vf\",\"scale=960:540:flags=lanczos,hue=s=0,lutrgb=r='37+val*(243-37)/255':g='49+val*(230-49)/255':b='34+val*(220-34)/255'\",\"-q:v\",\"5\",\"-map_metadata\",\"-1\",\"$STAGING_DIR/hero-mobile-poster.jpg\"]"
     }
   },
   "assets": [
     {
       "role": "heroDesktopVideo",
       "kind": "video",
-      "file": "hero-desktop-a43d320e78debeee.mp4",
-      "url": "/media/home/signal-network/hero-desktop-a43d320e78debeee.mp4",
-      "bytes": 1082783,
+      "file": "hero-desktop-26a1e70896e2035d.mp4",
+      "url": "/media/home/signal-network/hero-desktop-26a1e70896e2035d.mp4",
+      "bytes": 1047954,
       "width": 1280,
       "height": 720,
-      "sha256": "a43d320e78debeeefb0497e4f13be417a017cb89a7e5cf754a722518b8d96fd9",
+      "sha256": "26a1e70896e2035d66b6fb84bcd59dc1189d53084bf6396f4416ce31a403e222",
       "codec": "h264",
       "pixelFormat": "yuv420p",
       "fps": "24/1",
@@ -53,10 +53,10 @@
       },
       "quality": {
         "metric": "VMAF",
-        "vmaf": 86.094,
+        "vmaf": 88.405,
         "floor": 85,
-        "reference": "locked-master",
-        "command": "[\"$FFMPEG\",\"-hide_banner\",\"-loglevel\",\"error\",\"-i\",\"$STAGING_DIR/hero-desktop.mp4\",\"-i\",\"$LOCKED_SOURCE\",\"-lavfi\",\"[0:v]setpts=PTS-STARTPTS[dist];[1:v]setpts=PTS-STARTPTS[ref];[dist][ref]libvmaf=log_fmt=json:log_path=$STAGING_DIR/hero-desktop-vmaf.json:n_threads=1\",\"-an\",\"-f\",\"null\",\"-\"]",
+        "reference": "locked-master-wada-321-duotone",
+        "command": "[\"$FFMPEG\",\"-hide_banner\",\"-loglevel\",\"error\",\"-i\",\"$STAGING_DIR/hero-desktop.mp4\",\"-i\",\"$LOCKED_SOURCE\",\"-lavfi\",\"[0:v]setpts=PTS-STARTPTS[dist];[1:v]hue=s=0,lutrgb=r='37+val*(243-37)/255':g='49+val*(230-49)/255':b='34+val*(220-34)/255',setpts=PTS-STARTPTS[ref];[dist][ref]libvmaf=log_fmt=json:log_path=$STAGING_DIR/hero-desktop-vmaf.json:n_threads=1\",\"-an\",\"-f\",\"null\",\"-\"]",
         "ffmpegVersion": "ffmpeg version 8.1 Copyright (c) 2000-2026 the FFmpeg developers",
         "libvmafReportVersion": "3.0.0"
       }
@@ -64,12 +64,12 @@
     {
       "role": "heroMobileVideo",
       "kind": "video",
-      "file": "hero-mobile-b5e4dd66dec8f88b.mp4",
-      "url": "/media/home/signal-network/hero-mobile-b5e4dd66dec8f88b.mp4",
-      "bytes": 624108,
+      "file": "hero-mobile-ab014eb0e439867a.mp4",
+      "url": "/media/home/signal-network/hero-mobile-ab014eb0e439867a.mp4",
+      "bytes": 608983,
       "width": 960,
       "height": 540,
-      "sha256": "b5e4dd66dec8f88b074fda35d85f3ca01abe826db3c5be0e6a28e32569825f24",
+      "sha256": "ab014eb0e439867a7897f81fa1f89e024ce3fe134b7a0639cfe085c78bf868e4",
       "codec": "h264",
       "pixelFormat": "yuv420p",
       "fps": "24/1",
@@ -81,10 +81,10 @@
       },
       "quality": {
         "metric": "VMAF",
-        "vmaf": 82.609,
+        "vmaf": 84.682,
         "floor": 82,
-        "reference": "locked-master-scaled-960x540-lanczos",
-        "command": "[\"$FFMPEG\",\"-hide_banner\",\"-loglevel\",\"error\",\"-i\",\"$STAGING_DIR/hero-mobile.mp4\",\"-i\",\"$LOCKED_SOURCE\",\"-lavfi\",\"[0:v]setpts=PTS-STARTPTS[dist];[1:v]scale=960:540:flags=lanczos,setpts=PTS-STARTPTS[ref];[dist][ref]libvmaf=log_fmt=json:log_path=$STAGING_DIR/hero-mobile-vmaf.json:n_threads=1\",\"-an\",\"-f\",\"null\",\"-\"]",
+        "reference": "locked-master-scaled-960x540-lanczos-wada-321-duotone",
+        "command": "[\"$FFMPEG\",\"-hide_banner\",\"-loglevel\",\"error\",\"-i\",\"$STAGING_DIR/hero-mobile.mp4\",\"-i\",\"$LOCKED_SOURCE\",\"-lavfi\",\"[0:v]setpts=PTS-STARTPTS[dist];[1:v]scale=960:540:flags=lanczos,hue=s=0,lutrgb=r='37+val*(243-37)/255':g='49+val*(230-49)/255':b='34+val*(220-34)/255',setpts=PTS-STARTPTS[ref];[dist][ref]libvmaf=log_fmt=json:log_path=$STAGING_DIR/hero-mobile-vmaf.json:n_threads=1\",\"-an\",\"-f\",\"null\",\"-\"]",
         "ffmpegVersion": "ffmpeg version 8.1 Copyright (c) 2000-2026 the FFmpeg developers",
         "libvmafReportVersion": "3.0.0"
       }
@@ -92,12 +92,12 @@
     {
       "role": "heroDesktopPoster",
       "kind": "poster",
-      "file": "hero-desktop-poster-6937a1331156748a.jpg",
-      "url": "/media/home/signal-network/hero-desktop-poster-6937a1331156748a.jpg",
-      "bytes": 82435,
+      "file": "hero-desktop-poster-71ae852536a668ae.jpg",
+      "url": "/media/home/signal-network/hero-desktop-poster-71ae852536a668ae.jpg",
+      "bytes": 69456,
       "width": 1280,
       "height": 720,
-      "sha256": "6937a1331156748aed829f5e5842a82807c05f67aea5719981ce6b736a259067",
+      "sha256": "71ae852536a668aee7654ccf72cc505390caf0a89b5fb237751ec0b3db6ed3df",
       "frameTimeSeconds": 5,
       "probe": {
         "command": "[\"$FFPROBE\",\"-v\",\"error\",\"-show_streams\",\"-show_format\",\"-of\",\"json\",\"$STAGING_DIR/hero-desktop-poster.jpg\"]",
@@ -106,7 +106,7 @@
       "quality": {
         "method": "visual-review",
         "status": "passed",
-        "reviewedOn": "2026-07-29",
+        "reviewedOn": "2026-10-03",
         "criteria": [
           "faithful-crop",
           "silhouette-detail",
@@ -118,12 +118,12 @@
     {
       "role": "heroMobilePoster",
       "kind": "poster",
-      "file": "hero-mobile-poster-8a7aa20808c0f9a5.jpg",
-      "url": "/media/home/signal-network/hero-mobile-poster-8a7aa20808c0f9a5.jpg",
-      "bytes": 58011,
+      "file": "hero-mobile-poster-85e7d5e1c307c4dc.jpg",
+      "url": "/media/home/signal-network/hero-mobile-poster-85e7d5e1c307c4dc.jpg",
+      "bytes": 47194,
       "width": 960,
       "height": 540,
-      "sha256": "8a7aa20808c0f9a5a4fb26aa1c5bbe8a176b5163b619775e97ba5253e97b9b01",
+      "sha256": "85e7d5e1c307c4dcb6dae5d414e7ced06a22a5c772fe479abda20374166a6780",
       "frameTimeSeconds": 5,
       "probe": {
         "command": "[\"$FFPROBE\",\"-v\",\"error\",\"-show_streams\",\"-show_format\",\"-of\",\"json\",\"$STAGING_DIR/hero-mobile-poster.jpg\"]",
@@ -132,7 +132,7 @@
       "quality": {
         "method": "visual-review",
         "status": "passed",
-        "reviewedOn": "2026-07-29",
+        "reviewedOn": "2026-10-03",
         "criteria": [
           "faithful-crop",
           "silhouette-detail",

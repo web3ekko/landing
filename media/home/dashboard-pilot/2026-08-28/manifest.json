@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "name": "Approved dashboard palette pilot",
+  "capturedOn": "2026-08-28",
+  "approvedOn": "2026-08-28",
+  "approval": "I like these screens, save them so we can use them on the landing page",
+  "scope": "Approved visual references saved for future landing-page reuse; not a deployment or release approval.",
+  "primaryReference": "overview-desktop.png",
+  "sourceDirectory": "output/design-review/dashboard-palette-migration/pilot",
+  "dataProfile": "protocol_ops_demo persisted through Django and DuckLake for loaded screens",
+  "transformations": "None. Original PNG bytes and dimensions preserved.",
+  "integratedIntoLandingPage": false,
+  "assets": [
+    {
+      "file": "overview-desktop.png",
+      "url": "/media/home/dashboard-pilot/2026-08-28/overview-desktop.png",
+      "width": 1440,
+      "height": 1639,
+      "bytes": 300230,
+      "sha256": "bcdf4446633b325c64a5e6738c877d0918d70d295254fa6d99e955299cf6d781",
+      "state": "loaded",
+      "alt": "Ekko dashboard overview with protocol health and operational activity."
+    },
+    {
+      "file": "overview-mobile.png",
+      "url": "/media/home/dashboard-pilot/2026-08-28/overview-mobile.png",
+      "width": 390,
+      "height": 3253,
+      "bytes": 235601,
+      "sha256": "ed7edf2618fd7412fea753ce3d653b494bf17c90431831e4a4ead1f8f4156c29",
+      "state": "loaded",
+      "alt": "Mobile Ekko dashboard overview with protocol health and operational activity."
+    },
+    {
+      "file": "alerts-desktop.png",
+      "url": "/media/home/dashboard-pilot/2026-08-28/alerts-desktop.png",
+      "width": 1440,
+      "height": 2086,
+      "bytes": 361258,
+      "sha256": "9873d516603881dea004119680f0d2162ea64c819da98094dd6d17f862fc277a",
+      "state": "loaded",
+      "alt": "Alert plans with selected Treasury alert execution and delivery history."
+    },
+    {
+      "file": "alerts-mobile.png",
+      "url": "/media/home/dashboard-pilot/2026-08-28/alerts-mobile.png",
+      "width": 390,
+      "height": 4014,
+      "bytes": 288532,
+      "sha256": "b91a260e4bd0a0d72c68d01b4cb7acbd49f7039b83822e5bad99f6028e059d8b",
+      "state": "loaded",
+      "alt": "Mobile alert plans and selected alert details."
+    },
+    {
+      "file": "alerts-detail-mobile.png",
+      "url": "/media/home/dashboard-pilot/2026-08-28/alerts-detail-mobile.png",
+      "width": 325,
+      "height": 1159,
+      "bytes": 85391,
+      "sha256": "d30a3c6ba77b72473e1fae5e749998588f37822c3dea2d617cf5e9e4c97a519f",
+      "state": "loaded",
+      "alt": "Mobile Treasury alert detail panel with delivered, failed, pending and skipped outcomes."
+    },
+    {
+      "file": "create-desktop.png",
+      "url": "/media/home/dashboard-pilot/2026-08-28/create-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 181981,
+      "sha256": "1441fad4975d7c8b36abda242304d526846b2e6f3cc9a87ac832e158209b7228",
+      "state": "initial-blocked-draft",
+      "alt": "Create Alert dialog with natural-language input, translated logic and notification preview."
+    },
+    {
+      "file": "create-mobile.png",
+      "url": "/media/home/dashboard-pilot/2026-08-28/create-mobile.png",
+      "width": 390,
+      "height": 844,
+      "bytes": 59768,
+      "sha256": "e49a3449c6e0560982370fd6679110f1e7945d427414acedec3b0ed1d6875e92",
+      "state": "initial-blocked-draft",
+      "alt": "Mobile Create Alert dialog with visible action footer."
+    },
+    {
+      "file": "login-desktop.png",
+      "url": "/media/home/dashboard-pilot/2026-08-28/login-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 58463,
+      "sha256": "f782d92051afd4fc52b4c10cb12bfe1b9c572ab9d035fca893133c0139a87636",
+      "state": "authentication-entry",
+      "alt": "Ekko login screen in the approved dashboard palette."
+    },
+    {
+      "file": "login-mobile.png",
+      "url": "/media/home/dashboard-pilot/2026-08-28/login-mobile.png",
+      "width": 390,
+      "height": 849,
+      "bytes": 50043,
+      "sha256": "da7a9fc3e74b5fe909aa0edeb05425413bb974bf0ce951557933ea6a6debfe88",
+      "state": "authentication-entry",
+      "alt": "Mobile Ekko login screen."
+    },
+    {
+      "file": "login-mobile-error.png",
+      "url": "/media/home/dashboard-pilot/2026-08-28/login-mobile-error.png",
+      "width": 360,
+      "height": 892,
+      "bytes": 49659,
+      "sha256": "74c26b01f25f50f8be7431b7b2c4e596b8342f1dc61f7b437f597a374e1f31f9",
+      "state": "validation-error",
+      "alt": "Mobile Ekko login screen showing email validation feedback."
+    }
+  ]
+}

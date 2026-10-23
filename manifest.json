@@ -1,7 +1,7 @@
 {
-  "name": "Ekko - Onchain Monitoring",
+  "name": "Ekko - Onchain alerts that tell you why it matters",
   "short_name": "Ekko",
-  "description": "Onchain monitoring for protocol teams and wallet platforms",
+  "description": "Onchain alerts you write in plain English, for individuals and for teams serving their users",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

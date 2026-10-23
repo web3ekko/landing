@@ -1,0 +1,16 @@
+# Ekko documentation
+
+> Ekko helps Teams and Individuals understand onchain activity and make informed decisions. People control transaction execution.
+
+These Markdown pages are generated from the same articles as the public documentation. Read each page's availability and limitations before using its instructions.
+
+## Documentation
+
+- [Ekko documentation](https://ekko.zone/docs/index.md): Understand Ekko, choose your audience, and evaluate the scope of an integration.
+- [Documentation changelog](https://ekko.zone/docs/changelog.md): Changes to the public documentation library and its availability statements.
+- [Product concepts](https://ekko.zone/docs/concepts.md): How monitoring, intelligence, and proposed actions serve people within a clear scope.
+- [Delivery proof model](https://ekko.zone/docs/delivery-proof-model.md): Separate the trigger, affected cohort, expected notification, possible action, and impact.
+- [Individuals](https://ekko.zone/docs/guides/individuals.md): Understand direct Ekko use and keep it separate from provider subscriptions.
+- [Teams](https://ekko.zone/docs/guides/teams.md): Choose between serving provider subscribers and monitoring separately supplied wallets.
+- [Developer integrations](https://ekko.zone/docs/integrations.md): Evaluate an integration against its audience, coverage, consent, and delivery contract.
+- [Troubleshooting](https://ekko.zone/docs/troubleshooting.md): Identify the affected relationship and collect useful evidence for a documentation or notification question.
